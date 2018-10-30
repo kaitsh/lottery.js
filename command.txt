@@ -1,0 +1,1 @@
+cat names.txt | awk ' BEGIN{printf "["} {printf "{\"name\": \""$0"\", \"data\": {\"title\": \"Empleados\"}},"} END{printf "]"}' > names.json

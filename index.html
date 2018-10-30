@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>Lottery</title>
     <meta charset="UTF-8" />
@@ -9,7 +10,8 @@
             padding: 0;
             margin: 0;
         }
-        .lotterybox{
+
+        .lotterybox {
             height: 100%;
         }
     </style>
@@ -17,7 +19,7 @@
 
 <body>
     <div class="lotterybox"></div>
-    
+
     <!-- Zepto or jQuery -->
     <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 
@@ -26,15 +28,16 @@
 
     <!-- ROCK ON -->
     <script>
-            $.lottery({
-                el: '.lotterybox',
-                api: './sample-data.json',
-                once: false,
-                subtitle: "company",
-                // desc: "title",
-                timeout: 20,
-                number: 3
-            });
+        $.lottery({
+            el: '.lotterybox',
+            api: './names.json',
+            once: false,
+            //subtitle: "",
+            title: "Cooperativa Multiactiva Neuland ltda.",
+            speed: 600,
+            timeout: 5,
+            number: 1
+        });
     </script>
 
 </body>
